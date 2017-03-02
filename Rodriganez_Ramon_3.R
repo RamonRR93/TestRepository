@@ -22,10 +22,10 @@ head(Orange_Data)
 #Column "Purchase" is binary: CH or MM. Column Store is qualitative: ID goes from 1 to 4 and 7.
 
 #We start adding binary variables for the different stores
-Orange_Data$Store1 <- ifelse(Orange_Data$StoreID == 1, 1, 0)
-Orange_Data$Store2 <- ifelse(Orange_Data$StoreID == 2, 1, 0)
-Orange_Data$Store3 <- ifelse(Orange_Data$StoreID == 3, 1, 0)
-Orange_Data$Store4 <- ifelse(Orange_Data$StoreID == 4, 1, 0)
+Orange_Data$StoreA <- ifelse(Orange_Data$StoreID == 1, 1, 0)
+Orange_Data$StoreB <- ifelse(Orange_Data$StoreID == 2, 1, 0)
+Orange_Data$StoreC <- ifelse(Orange_Data$StoreID == 3, 1, 0)
+Orange_Data$StoreD <- ifelse(Orange_Data$StoreID == 4, 1, 0)
 
 #We clean the StoreID Column. We also do not need column "X"
 Orange_Data = subset(Orange_Data, select = - c(StoreID,X,SalePriceMM,SalePriceCH,PriceDiff))
