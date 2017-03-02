@@ -6,7 +6,7 @@
 #
 #
 
-setwd('~/Desktop/COLUMBIA/Business Analytics/Assignments/A3')
+setwd('~/Github/TestRepository')
 
 
 
@@ -35,7 +35,7 @@ Orange_Data$Purchase = ifelse(Orange_Data$Purchase == "MM",1,0)
 
 #We assign the data to three different groups:
 set.seed(1337)
-RowAssignment = sample(c("train","train","validate","test"), nrow(Orange_Data), rep = TRUE)
+RowAssignment = sample(c("train","validate","test"), nrow(Orange_Data), rep = TRUE)
 train_rows = ifelse(RowAssignment == "train",TRUE,FALSE)
 validate_rows = ifelse(RowAssignment == "validate",TRUE,FALSE)
 test_rows = ifelse(RowAssignment == "test",TRUE,FALSE)
