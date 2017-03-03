@@ -170,3 +170,7 @@ cost = 1*table_results[1,2] #Expected 0, real 1: promotion wasted
 revenue = 3*table_results[1,1] #Expected 0, real 0: positive effect
 payoff = revenue - cost
 print(payoff)
+
+# sdfsdafd
+
+### Change 234234
