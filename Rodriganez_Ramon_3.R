@@ -1,4 +1,4 @@
-#
+# Ramon Comments
 #
 # Business Analytics
 # Assignment 3
@@ -8,6 +8,7 @@
 
 setwd('~/Github/TestRepository')
 #New comments from Ramon
+
 
 
 #///////////////// PROBLEM 1 ///////////////////////
